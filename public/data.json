@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Web Development Bootcamp",
+        "instructor": "Dr. Angela Yu",
+        "duration": "65 hours",
+        "rating": 4.9,
+        "level": "Beginner",
+        "description": "Master HTML, CSS, JavaScript, React, and Node.js with hands-on projects.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "category": "Development"
+    },
+    {
+        "id": 2,
+        "title": "Advanced UI/UX Design Systems",
+        "instructor": "Sarah Johnson",
+        "duration": "15 hours",
+        "rating": 4.8,
+        "level": "Intermediate",
+        "description": "Learn to create scalable design systems and high-fidelity prototypes in Figma.",
+        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?auto=format&fit=crop&w=800&q=80",
+        "category": "Design"
+    },
+    {
+        "id": 3,
+        "title": "Python for Data Science & ML",
+        "instructor": "Jose Portilla",
+        "duration": "25 hours",
+        "rating": 4.7,
+        "level": "Intermediate",
+        "description": "Use NumPy, Pandas, Seaborn, and Scikit-Learn to analyze complex datasets.",
+        "image": "https://images.unsplash.com/photo-1551288049-bbda4e966c52?auto=format&fit=crop&w=800&q=80",
+        "category": "Data Science"
+    },
+    {
+        "id": 4,
+        "title": "Digital Marketing Masterclass",
+        "instructor": "Mark Thompson",
+        "duration": "12 hours",
+        "rating": 4.5,
+        "level": "Beginner",
+        "description": "A comprehensive guide to SEO, Social Media Marketing, and Google Ads.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "category": "Business"
+    },
+    {
+        "id": 5,
+        "title": "Cyber Security: From Zero to Hero",
+        "instructor": "Nathan House",
+        "duration": "30 hours",
+        "rating": 4.9,
+        "level": "Beginner",
+        "description": "Stop hackers, prevent tracking, and learn network security from the ground up.",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+        "category": "IT & Software"
+    },
+    {
+        "id": 6,
+        "title": "Graphic Design Theory",
+        "instructor": "Lindsay Marsh",
+        "duration": "10 hours",
+        "rating": 4.6,
+        "level": "Beginner",
+        "description": "Understanding color theory, typography, and layout for professional branding.",
+        "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
+        "category": "Design"
+    },
+    {
+        "id": 7,
+        "title": "React & Next.js: The Practical Guide",
+        "instructor": "Maximilian Schwarzmüller",
+        "duration": "40 hours",
+        "rating": 4.9,
+        "level": "Advanced",
+        "description": "Build high-performance web applications using the latest Next.js App Router.",
+        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+        "category": "Development"
+    },
+    {
+        "id": 8,
+        "title": "Financial Analysis and Modeling",
+        "instructor": "Chris Haroun",
+        "duration": "18 hours",
+        "rating": 4.7,
+        "level": "Intermediate",
+        "description": "Master Excel for financial analysis, investment banking, and forecasting.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+        "category": "Finance"
+    },
+    {
+        "id": 9,
+        "title": "Mobile App Dev with Flutter",
+        "instructor": "Paolo Dichone",
+        "duration": "28 hours",
+        "rating": 4.8,
+        "level": "Intermediate",
+        "description": "Build beautiful native apps for iOS and Android with a single codebase.",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+        "category": "Development"
+    },
+    {
+        "id": 10,
+        "title": "The Art of Public Speaking",
+        "instructor": "Jane Watson",
+        "duration": "6 hours",
+        "rating": 4.4,
+        "level": "All Levels",
+        "description": "Overcome fear and deliver powerful presentations that captivate any audience.",
+        "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
+        "category": "Personal Development"
+    }
+]
