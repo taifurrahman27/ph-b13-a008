@@ -10,13 +10,13 @@ export default function NotFound() {
             <div className="absolute top-0 left-0 w-72 h-72 bg-purple-600/20 blur-3xl rounded-full"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full"></div>
 
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px]"></div>
 
             <div className="relative z-10 max-w-2xl w-full">
 
                 <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-10 md:p-14 shadow-2xl text-center">
 
-                    <h1 className="text-[110px] md:text-[150px] font-black leading-none tracking-tight bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    <h1 className="text-[110px] md:text-[150px] font-black leading-none tracking-tight bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                         404
                     </h1>
 
@@ -34,7 +34,7 @@ export default function NotFound() {
 
                         <Link
                             href="/"
-                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:scale-105 transition-all duration-300 font-semibold shadow-lg shadow-cyan-500/20"
+                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 hover:scale-105 transition-all duration-300 font-semibold shadow-lg shadow-cyan-500/20"
                         >
                             <Home size={18} />
                             Back to Home
