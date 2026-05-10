@@ -35,8 +35,8 @@ const NavBar = () => {
                             <Image
                                 src={navLogo}
                                 alt="logo"
-                                width={60}
-                                height={60}
+                                width={50}
+                                height={50}
                                 priority
                                 className=" border border-white/10 shadow-lg shadow-cyan-500/20"
                             />
