@@ -6,6 +6,7 @@
         "duration": "65 hours",
         "rating": 4.9,
         "level": "Beginner",
+        "price": 89.99,
         "description": "Master HTML, CSS, JavaScript, React, and Node.js with hands-on projects.",
         "image": "/images/id-1.jpg",
         "category": "Development"
@@ -17,6 +18,7 @@
         "duration": "15 hours",
         "rating": 4.8,
         "level": "Intermediate",
+        "price": 59.99,
         "description": "Learn to create scalable design systems and high-fidelity prototypes in Figma.",
         "image": "/images/id-2.jpg",
         "category": "Design"
@@ -28,6 +30,7 @@
         "duration": "25 hours",
         "rating": 4.7,
         "level": "Intermediate",
+        "price": 69.99,
         "description": "Use NumPy, Pandas, Seaborn, and Scikit-Learn to analyze complex datasets.",
         "image": "/images/id-3.jpg",
         "category": "Data Science"
@@ -38,6 +41,7 @@
         "instructor": "Mark Thompson",
         "duration": "12 hours",
         "rating": 4.5,
+        "price": 49.99,
         "level": "Beginner",
         "description": "A comprehensive guide to SEO, Social Media Marketing, and Google Ads.",
         "image": "/images/id-4.jpg",
@@ -50,6 +54,7 @@
         "duration": "30 hours",
         "rating": 4.9,
         "level": "Beginner",
+        "price": 79.99,
         "description": "Stop hackers, prevent tracking, and learn network security from the ground up.",
         "image": "/images/id-5.jpg",
         "category": "IT & Software"
@@ -61,6 +66,7 @@
         "duration": "10 hours",
         "rating": 4.6,
         "level": "Beginner",
+        "price": 39.99,
         "description": "Understanding color theory, typography, and layout for professional branding.",
         "image": "/images/id-6.jpg",
         "category": "Design"
@@ -72,6 +78,7 @@
         "duration": "40 hours",
         "rating": 4.9,
         "level": "Advanced",
+        "price": 89.99,
         "description": "Build high-performance web applications using the latest Next.js App Router.",
         "image": "/images/id-7.jpg",
         "category": "Development"
@@ -83,6 +90,7 @@
         "duration": "18 hours",
         "rating": 4.7,
         "level": "Intermediate",
+        "price": 59.99,
         "description": "Master Excel for financial analysis, investment banking, and forecasting.",
         "image": "/images/id-8.jpg",
         "category": "Finance"
@@ -94,6 +102,7 @@
         "duration": "28 hours",
         "rating": 4.8,
         "level": "Intermediate",
+        "price": 69.99,
         "description": "Build beautiful native apps for iOS and Android with a single codebase.",
         "image": "/images/id-9.jpg",
         "category": "Development"
@@ -105,6 +114,7 @@
         "duration": "6 hours",
         "rating": 4.4,
         "level": "All Levels",
+        "price": 39.99,
         "description": "Overcome fear and deliver powerful presentations that captivate any audience.",
         "image": "/images/id-10.jpg",
         "category": "Personal Development"

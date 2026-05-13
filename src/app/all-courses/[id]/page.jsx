@@ -159,7 +159,7 @@ const CourseDetailsPage = async ({ params }) => {
                             <div className="flex items-center gap-2 text-cyan-400">
                                 <FaUsers />
                                 <span>
-                                    + Students
+                                    99K+ Students
                                 </span>
                             </div>
 
@@ -191,7 +191,7 @@ const CourseDetailsPage = async ({ params }) => {
                         <div className="mt-8">
 
                             <h2 className="text-2xl font-bold text-cyan-400">
-                                Contact for Pricing and Enrollment
+                                Price: ${course.price}
                             </h2>
 
                         </div>

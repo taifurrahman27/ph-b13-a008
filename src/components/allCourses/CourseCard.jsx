@@ -25,7 +25,7 @@ const CourseCard = ({ course }) => {
     } = course;
 
     return (
-        <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div className="group flex flex-col h-full overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
 
             <div className="relative overflow-hidden">
 
@@ -37,7 +37,7 @@ const CourseCard = ({ course }) => {
                     className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent"></div>
 
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyan-500 text-white text-xs font-semibold shadow-md">
                     {level}
@@ -49,7 +49,7 @@ const CourseCard = ({ course }) => {
 
             </div>
 
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-1">
 
                 <div className="flex items-center gap-2 text-sm mb-3">
 
@@ -60,15 +60,11 @@ const CourseCard = ({ course }) => {
                         </span>
                     </div>
 
-                    <span className="text-gray-400">
-                        •
-                    </span>
+                    <span className="text-gray-400">•</span>
 
                     <div className="flex items-center gap-1 text-gray-500">
                         <FaUsers />
-                        <span>
-                            {students}+ Students
-                        </span>
+                        <span>{students}+ Students</span>
                     </div>
 
                 </div>
@@ -84,10 +80,7 @@ const CourseCard = ({ course }) => {
                 <div className="flex items-center justify-between mt-5">
 
                     <div>
-                        <p className="text-xs text-gray-400">
-                            Instructor
-                        </p>
-
+                        <p className="text-xs text-gray-400">Instructor</p>
                         <h4 className="font-semibold text-gray-800">
                             {instructor}
                         </h4>
@@ -100,11 +93,11 @@ const CourseCard = ({ course }) => {
 
                 </div>
 
-                <div className="border-t border-gray-200 my-5"></div>
+                <div className="flex-1"></div>
 
                 <Link href={`/all-courses/${id}`}>
 
-                    <button className="w-full py-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold flex items-center justify-center gap-2 hover:gap-4 transition-all duration-300 shadow-lg shadow-cyan-500/20">
+                    <button className="w-full py-3 mt-6 rounded-2xl bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold flex items-center justify-center gap-2 hover:gap-4 transition-all duration-300 shadow-lg shadow-cyan-500/20">
 
                         View Details
 
