@@ -21,7 +21,7 @@ const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0B1120]/80 backdrop-blur-xl">
+        <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0B1120]/90 backdrop-blur-xl">
 
             <div className="absolute inset-0 bg-linear-to-r from-purple-500/10 via-cyan-500/10 to-pink-500/10"></div>
 
