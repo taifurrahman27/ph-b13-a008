@@ -4,6 +4,8 @@ const CourseDetailsPage = async ({ params }) => {
     const { id } = await params;
     console.log(id, "params id");
 
+
+
     return (
         <div>
             <h1 className='text-5xl font-bold text-center my-8'>All Courses</h1>
