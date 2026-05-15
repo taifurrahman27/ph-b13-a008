@@ -25,7 +25,7 @@ const CourseCard = ({ course }) => {
     } = course;
 
     return (
-        <div className="group flex flex-col h-full overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+        <div className="group flex flex-col h-full p-5 overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
 
             <div className="relative overflow-hidden">
 
@@ -34,7 +34,7 @@ const CourseCard = ({ course }) => {
                     alt={title}
                     width={500}
                     height={300}
-                    className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full rounded-2xl h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
 
                 <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent"></div>

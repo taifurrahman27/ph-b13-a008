@@ -20,6 +20,8 @@
     "swiper": "^12.1.4"
   },
   "devDependencies": {
+    "@gravity-ui/icons": "^2.18.0",
+    "@iconify-json/gravity-ui": "^1.2.12",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
