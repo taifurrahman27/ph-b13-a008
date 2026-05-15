@@ -108,7 +108,7 @@ const PopularCourses = () => {
                                 </div>
 
                                 <Link href={`/all-courses/${course.id}`}>
-                                    <button className="mt-4 w-full py-2 rounded-xl bg-linear-to-r from-cyan-500 to-purple-600 font-semibold hover:scale-105 transition">
+                                    <button className="mt-4 w-full py-2 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold hover:scale-105 transition">
                                         View Details
                                     </button>
                                 </Link>

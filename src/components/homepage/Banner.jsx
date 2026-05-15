@@ -80,7 +80,7 @@ export default function Banner() {
 
                                     <div className="mt-8">
 
-                                        <Link href="/all-courses" className="inline-block px-6 py-3 rounded-2xl bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:scale-105 transition-transform duration-200">
+                                        <Link href="/all-courses" className="inline-block px-6 py-3 rounded-2xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold hover:scale-105 transition-transform duration-200">
 
                                             Explore Courses
 

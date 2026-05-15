@@ -97,7 +97,7 @@ const CourseCard = ({ course }) => {
 
                 <Link href={`/all-courses/${id}`}>
 
-                    <button className="w-full py-3 mt-6 rounded-2xl bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold flex items-center justify-center gap-2 hover:gap-4 transition-all duration-300 shadow-lg shadow-cyan-500/20">
+                    <button className="w-full py-3 mt-6 rounded-2xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center justify-center gap-2 hover:gap-4 transition-all duration-300 shadow-lg shadow-cyan-500/20">
 
                         View Details
 

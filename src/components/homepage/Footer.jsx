@@ -31,7 +31,7 @@ const Footer = () => {
                         <div>
                             <h2 className="text-3xl font-extrabold tracking-tight">
                                 <span className="text-white">Skill</span>
-                                <span className="bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600  bg-clip-text text-transparent">
                                     Sphere
                                 </span>
                             </h2>

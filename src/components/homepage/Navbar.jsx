@@ -41,12 +41,13 @@ const NavBar = () => {
                                 className=" border border-white/10 shadow-lg shadow-cyan-500/20"
                             />
 
-                            <div className="absolute -inset-1 bg-linear-to-r from-cyan-500 to-purple-500 rounded-2xl blur opacity-30 -z-10"></div>
+                            <div className="absolute -inset-1 bg-linear-to-r from-cyan-500 to-purple-500 rounded-2xl blur opacity-30 -z-10">
+                            </div>
                         </div>
 
                         <h2 className="text-2xl font-extrabold tracking-tight">
                             <span className="text-white">Skill</span>
-                            <span className="bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600  bg-clip-text text-transparent">
                                 Sphere
                             </span>
                         </h2>
@@ -82,7 +83,7 @@ const NavBar = () => {
 
                     <Link
                         href={"/login"}
-                        className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
+                        className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
                     >
                         Login
                         <FaChevronRight className="group-hover:translate-x-1 transition" />
@@ -126,7 +127,7 @@ const NavBar = () => {
 
                             <Link
                                 href={"/login"}
-                                className="text-center py-3 rounded-xl bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 text-white font-semibold flex items-center justify-center gap-2"
+                                className="text-center py-3 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center justify-center gap-2"
                             >
                                 Login
                                 <FaChevronRight />

@@ -190,9 +190,7 @@ export default function NewReleaseCourses() {
 
                                         <button
                                             className="w-full py-3 rounded-2xl
-                                            bg-linear-to-r
-                                            from-purple-500 to-cyan-500
-                                            text-white font-semibold
+                                           bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold
                                             flex items-center justify-center gap-2
                                             hover:gap-4
                                             transition-all duration-300"

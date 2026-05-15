@@ -16,7 +16,7 @@ export default function NotFound() {
 
                 <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-10 md:p-14 shadow-2xl text-center">
 
-                    <h1 className="text-[110px] md:text-[150px] font-black leading-none tracking-tight bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    <h1 className="text-[110px] md:text-[150px] font-black leading-none tracking-tight bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600  bg-clip-text text-transparent">
                         404
                     </h1>
 
@@ -34,7 +34,7 @@ export default function NotFound() {
 
                         <Link
                             href="/"
-                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 hover:scale-105 transition-all duration-300 font-semibold shadow-lg shadow-cyan-500/20"
+                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600  hover:scale-105 transition-all duration-300 font-semibold shadow-lg shadow-cyan-500/20"
                         >
                             <Home size={18} />
                             Back to Home

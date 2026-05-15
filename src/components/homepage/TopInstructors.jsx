@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink } from "lucide-react"; // npm i lucide-react
 import { LiaLinkedin } from "react-icons/lia";
 import { BsTwitter } from "react-icons/bs";
 
@@ -46,7 +45,7 @@ export default function TopInstructors() {
                             Expert Mentors
                         </div>
                         <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
-                            Meet the <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-purple-500 to-pink-500">Masters</span>
+                            Meet the <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600  ">Masters</span>
                         </h1>
                     </div>
                 </div>
