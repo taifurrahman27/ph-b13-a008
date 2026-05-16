@@ -27,7 +27,7 @@ const LoginPage = () => {
 
 
     return (
-        <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 py-20 bg-[#0B1120]">
+        <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 py-10 bg-[#0B1120]">
 
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-0 left-0 w-125 h-125 bg-cyan-500/20 blur-3xl rounded-full animate-pulse"></div>
@@ -71,14 +71,14 @@ const LoginPage = () => {
                             Welcome To SkillSphere
                         </div>
                     </div>
-                    <div className="text-center mt-6">
-                        <h1 className="text-4xl md:text-5xl font-black text-white leading-tight">
+                    <div className="text-center my-4">
+                        <h1 className="text-2xl md:text-3xl font-black text-white leading-tight">
                             Login to Your Account
                         </h1>
                     </div>
 
                     <Form
-                        className="flex flex-col gap-6 mt-10"
+                        className="flex flex-col gap-5 mt-8"
                     >
                         <TextField
                             isRequired
@@ -173,16 +173,18 @@ const LoginPage = () => {
 
                         </Button>
 
-                        <div className="relative flex items-center justify-center my-5 group">
-                            <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/10 to-transparent"></div>
+                        <div className="relative flex items-center justify-center my-3 group">
+                            <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/10 to-transparent">
+                            </div>
                             <span
-                                className="px-6 text-[10px] font-bold tracking-[0.3em] uppercase text-gray-400 
+                                className="px-6 py-1 text-xs font-bold tracking-[0.3em] uppercase text-gray-400 
     bg-[#020617] relative z-10 select-none
     group-focus-within:text-purple-400 transition-colors duration-500"
                             >
                                 Or Continue With
                             </span>
-                            <div className="flex-1 h-px bg-linear-to-l from-transparent via-white/10 to-transparent"></div>
+                            <div className="flex-1 h-px bg-linear-to-l from-transparent via-white/10 to-transparent">
+                            </div>
                         </div>
 
                         <Button
@@ -195,18 +197,13 @@ const LoginPage = () => {
                             <div className="transition-transform duration-300 group-hover:scale-110">
                                 <FcGoogle className="text-xl" />
                             </div>
-
                             <span>Sign in with Google</span>
                         </Button>
 
                     </Form>
 
-
-
                     <div className="text-center mt-8 text-gray-400 font-medium tracking-wide">
-
                         Don&apos;t have an account?{" "}
-
                         <Link
                             href="/signup"
                             className="relative inline-flex items-center text-cyan-400 font-bold group overflow-hidden"
@@ -224,7 +221,6 @@ const LoginPage = () => {
             transition-transform duration-300
             origin-center"
                             />
-
                         </Link>
 
                     </div>

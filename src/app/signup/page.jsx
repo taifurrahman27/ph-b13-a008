@@ -30,7 +30,7 @@ const SignupPage = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     return (
-        <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 py-20 bg-[#070B14]">
+        <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 py-10 bg-[#070B14]">
 
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-0 left-0 w-125 h-125 bg-cyan-500/20 blur-3xl rounded-full animate-pulse" />
@@ -42,12 +42,12 @@ const SignupPage = () => {
 
             <div className="relative z-10 w-full max-w-lg rounded-[36px] border border-white/10 bg-white/4 backdrop-blur-3xl shadow-[0_0_80px_rgba(0,255,255,0.08)] overflow-hidden">
 
-                <div className="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-cyan-400 via-purple-500 to-pink-500" />
+                <div className="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500" />
 
                 <div className="p-8 md:p-10">
 
                     <div className="flex justify-center">
-                        <div className="relative w-24 h-24 rounded-full bg-linear-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center shadow-[0_0_40px_rgba(6,182,212,0.4)]">
+                        <div className="relative w-24 h-24 rounded-full bg-linear-to-br from-cyan-500 via-blue-600 to-purple-600 flex items-center justify-center shadow-[0_0_40px_rgba(6,182,212,0.4)]">
                             <div className="absolute inset-0 rounded-full bg-white/20 blur-xl" />
                             <FaUserGraduate className="relative text-4xl text-white" />
                         </div>
@@ -60,19 +60,19 @@ const SignupPage = () => {
                         </div>
                     </div>
 
-                    <div className="text-center mt-6">
-                        <h1 className="text-4xl md:text-5xl font-black text-white leading-tight">
+                    <div className="text-center mt-4">
+                        <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">
                             Create Your
-                            <span className="block bg-linear-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+                            <span className="block bg-linear-to-r from-cyan-500 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                                 Dream Career
                             </span>
                         </h1>
-                        <p className="mt-4 text-gray-400 leading-relaxed">
+                        <p className="mt-3 text-gray-400 leading-relaxed">
                             Learn modern skills from industry experts and unlock your future 🚀
                         </p>
                     </div>
 
-                    <Form className="flex flex-col mt-10 group/form">
+                    <Form className="flex flex-col my-8 group/form">
 
                         <TextField isRequired name="name" className="flex flex-col gap-2 w-full group">
                             <Label className="text-xs font-bold text-gray-400 ml-1 tracking-wide uppercase group-focus-within:text-cyan-400 transition-colors">
