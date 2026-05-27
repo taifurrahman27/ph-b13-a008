@@ -23,6 +23,43 @@ import {
     HiSparkles,
 } from "react-icons/hi2";
 const LoginPage = () => {
+    const onSubmit = async (e) => {
+
+        e.preventDefault();
+
+        try {
+
+            const formData = new FormData(e.currentTarget);
+
+            const userData = Object.fromEntries(formData.entries());
+
+            console.log(userData);
+
+            const { email, password } = userData;
+
+            const { data, error } = await authClient.signUp.email({
+                email,
+                password,
+                callbackURL: "/dashboard",
+            });
+
+            if (error) {
+                console.log(error);
+                alert(error.message);
+                return;
+            }
+
+            if (data) {
+                alert("Login successful");
+                router.push("/");
+            }
+
+        } catch (err) {
+            console.log(err);
+            alert("Something went wrong");
+        }
+    };
+
     const [isVisible, setIsVisible] = useState(false);
 
 
@@ -79,6 +116,7 @@ const LoginPage = () => {
 
                     <Form
                         className="flex flex-col gap-5 mt-8"
+                        onSubmit={onSubmit}
                     >
                         <TextField
                             isRequired
