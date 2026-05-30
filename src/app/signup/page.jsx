@@ -35,8 +35,6 @@ const SignupPage = () => {
         const data = await authClient.signIn.social({
             provider: "google",
         });
-        console.log(data);
-
     }
 
 
@@ -53,9 +51,6 @@ const SignupPage = () => {
             const formData = new FormData(e.currentTarget);
 
             const userData = Object.fromEntries(formData.entries());
-
-            console.log(userData);
-
             const { email, password, name, photo } = userData;
 
             const { data, error } = await authClient.signUp.email({
@@ -67,7 +62,6 @@ const SignupPage = () => {
             });
 
             if (error) {
-                console.log(error);
                 alert(error.message);
                 return;
             }
@@ -78,7 +72,6 @@ const SignupPage = () => {
             }
 
         } catch (err) {
-            console.log(err);
             alert("Something went wrong");
         }
     };

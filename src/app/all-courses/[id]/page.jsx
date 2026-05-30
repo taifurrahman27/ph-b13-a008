@@ -35,7 +35,6 @@ const CourseDetailsPage = async ({ params }) => {
     const courses = await res.json();
 
     const course = courses.find((p) => p.id == id);
-    console.log(course);
 
 
     if (!course) {
