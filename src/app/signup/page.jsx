@@ -31,6 +31,15 @@ import { authClient } from "@/lib/auth-client";
 
 const SignupPage = () => {
 
+    const handleGoogleLogin = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+        console.log(data);
+
+    }
+
+
     const router = useRouter();
 
     const [isVisible, setIsVisible] = useState(false);
@@ -91,7 +100,6 @@ const SignupPage = () => {
 
                 <div className="p-8 md:p-10">
 
-                    {/* Logo */}
                     <div className="flex justify-center">
                         <div className="relative w-24 h-24 rounded-full bg-linear-to-br from-cyan-500 via-blue-600 to-purple-600 flex items-center justify-center shadow-[0_0_40px_rgba(6,182,212,0.4)]">
                             <div className="absolute inset-0 rounded-full bg-white/20 blur-xl" />
@@ -99,7 +107,6 @@ const SignupPage = () => {
                         </div>
                     </div>
 
-                    {/* Badge */}
                     <div className="flex justify-center mt-6">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300 text-sm font-semibold">
                             <HiSparkles />
@@ -107,7 +114,6 @@ const SignupPage = () => {
                         </div>
                     </div>
 
-                    {/* Heading */}
                     <div className="text-center mt-4">
                         <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">
                             Create Your
@@ -121,13 +127,11 @@ const SignupPage = () => {
                         </p>
                     </div>
 
-                    {/* Form */}
                     <Form
                         className="flex flex-col my-8 group/form"
                         onSubmit={onSubmit}
                     >
 
-                        {/* Name */}
                         <TextField
                             isRequired
                             name="name"
@@ -159,7 +163,6 @@ const SignupPage = () => {
 
                         </TextField>
 
-                        {/* Email */}
                         <TextField
                             isRequired
                             name="email"
@@ -193,7 +196,6 @@ const SignupPage = () => {
 
                         </TextField>
 
-                        {/* Photo */}
                         <TextField
                             isRequired
                             name="photo"
@@ -225,7 +227,6 @@ const SignupPage = () => {
 
                         </TextField>
 
-                        {/* Password */}
                         <TextField
                             isRequired
                             className="flex flex-col gap-2 w-full mt-5 group"
@@ -272,7 +273,6 @@ const SignupPage = () => {
 
                         </TextField>
 
-                        {/* Submit Button */}
                         <Button
                             type="submit"
                             className="relative mt-8 w-full h-14 overflow-hidden rounded-2xl bg-linear-to-r from-cyan-500 via-blue-600 to-purple-600 text-white font-bold text-base tracking-wide shadow-[0_0_25px_rgba(6,182,212,0.3)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_35px_rgba(168,85,247,0.4)] group/btn"
@@ -287,7 +287,6 @@ const SignupPage = () => {
 
                         </Button>
 
-                        {/* Divider */}
                         <div className="relative flex items-center justify-center my-8 group/divider">
                             <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
 
@@ -298,9 +297,8 @@ const SignupPage = () => {
                             <div className="flex-1 h-px bg-linear-to-l from-transparent via-white/10 to-transparent" />
                         </div>
 
-                        {/* Google Button */}
                         <Button
-                            type="button"
+                            onClick={handleGoogleLogin}
                             className="w-full h-14 rounded-2xl border border-white/10 bg-white/4 text-white font-semibold hover:bg-white/8 transition-all duration-300 flex items-center justify-center gap-3"
                         >
                             <FcGoogle className="text-2xl" />
@@ -309,7 +307,6 @@ const SignupPage = () => {
 
                     </Form>
 
-                    {/* Login */}
                     <div className="text-center mt-8 text-gray-400 font-medium tracking-wide">
 
                         Already have an account?{" "}
