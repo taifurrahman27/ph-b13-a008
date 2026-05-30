@@ -77,7 +77,6 @@ const SignupPage = () => {
     return (
         <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-4 py-10 bg-[#070B14]">
 
-            {/* Background Effects */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-0 left-0 w-125 h-125 bg-cyan-500/20 blur-3xl rounded-full animate-pulse" />
                 <div className="absolute bottom-0 right-0 w-125 h-125 bg-purple-500/20 blur-3xl rounded-full animate-pulse" />
@@ -86,7 +85,6 @@ const SignupPage = () => {
 
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[45px_45px]" />
 
-            {/* Card */}
             <div className="relative z-10 w-full max-w-lg rounded-[36px] border border-white/10 bg-white/4 backdrop-blur-3xl shadow-[0_0_80px_rgba(0,255,255,0.08)] overflow-hidden">
 
                 <div className="absolute top-0 inset-x-0 h-1 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500" />

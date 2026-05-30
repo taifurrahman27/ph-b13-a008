@@ -29,6 +29,14 @@ import { authClient } from "@/lib/auth-client";
 
 const LoginPage = () => {
 
+    const handleGoogleLogin = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+        console.log(data);
+
+    }
+
     const router = useRouter();
 
     const onSubmit = async (e) => {
@@ -237,6 +245,7 @@ const LoginPage = () => {
                         </div>
 
                         <Button
+                            onClick={handleGoogleLogin}
                             className="w-full h-14 rounded-2xl flex items-center justify-center gap-3
   border border-white/10 bg-white/3 text-sm font-semibold text-gray-200
   hover:bg-white/8 hover:text-white hover:border-purple-500/30
