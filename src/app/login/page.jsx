@@ -24,6 +24,7 @@ import {
 } from "react-icons/hi2";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 
 
@@ -47,8 +48,6 @@ const LoginPage = () => {
 
             const userData = Object.fromEntries(formData.entries());
 
-            console.log(userData);
-
             const { email, password } = userData;
 
             const { data, error } = await authClient.signIn.email({
@@ -59,20 +58,18 @@ const LoginPage = () => {
 
             if (error) {
                 console.log(error);
-                alert(error.message);
+                toast.error(error.message);
                 return;
             }
 
             if (data) {
-                alert("Login successful");
+                toast.success("Login successful");
                 router.push("/");
             }
 
         } catch (error) {
 
-            console.log(error);
-
-            alert("Something went wrong");
+            toast("Something went wrong");
         }
     };
 
@@ -227,6 +224,7 @@ const LoginPage = () => {
                             </div>
 
                         </Button>
+
 
                         <div className="relative flex items-center justify-center my-3 group">
                             <div className="flex-1 h-px bg-linear-to-r from-transparent via-white/10 to-transparent">

@@ -14,7 +14,7 @@ The goal of this project is to make learning interactive, accessible, and career
 ---
 
 ## 🌐 Live URL
-
+-https://ph-b13-a008.vercel.app/
 ---
 
 ## ✨ Key Features
@@ -70,6 +70,7 @@ The goal of this project is to make learning interactive, accessible, and career
 
 ```bash
 # Clone the repository
+https://github.com/taifurrahman27/ph-b13-a008
 
 # Install dependencies
 npm install
