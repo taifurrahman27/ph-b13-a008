@@ -84,7 +84,7 @@ const NavBar = () => {
 
                     {isPending ?
                         "User Loading..." : user ? (<div className="flex justify-center items-center gap-3 cursor-pointer">
-                            <p className="text-xl font-bold text-blue-500"> Welcome, {user?.name}</p>
+                            <p className="text-xl font-bold text-purple-500"> Welcome, {user?.name}</p>
                             <Image src={user?.image} alt="DP" width={50} height={50}>
                             </Image>
                             <div
@@ -138,7 +138,7 @@ const NavBar = () => {
                         </div>
                         {isPending ?
                             "User Loading..." : user ? (<div className="flex justify-center items-center gap-3 cursor-pointer">
-                                <p className="text-xl font-bold text-blue-500"> Welcome, {user?.name}</p>
+                                <p className="text-xl font-bold text-purple-500"> Welcome, {user?.name}</p>
                                 <Image src={user?.image} alt="DP" width={50} height={50}>
                                 </Image>
                                 <div
@@ -155,6 +155,7 @@ const NavBar = () => {
                                 Login
                                 <FaChevronRight className="group-hover:translate-x-1 transition" />
                             </Link>)}
+
                     </div>
                 )
             }
