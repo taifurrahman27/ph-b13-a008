@@ -26,7 +26,7 @@ const CourseDetailsPage = async ({ params }) => {
     const { id } = await params;
 
     const res = await fetch(
-        "http://localhost:3000/data.json",
+        "https://ph-b13-a008.vercel.app/data.json",
         {
             cache: "no-store",
         }
