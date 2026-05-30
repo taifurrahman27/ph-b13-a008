@@ -15,8 +15,12 @@ import {
 } from "react-icons/fa";
 
 import Navlink from "../Navlink";
+import { authClient } from "@/lib/auth-client";
 
 const NavBar = () => {
+
+    const { data: session, isPending } = authClient.useSession();
+    const user = session?.user;
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,7 +29,7 @@ const NavBar = () => {
 
             <div className="absolute inset-0 bg-linear-to-r from-purple-500/10 via-cyan-500/10 to-pink-500/10"></div>
 
-            <nav className="relative flex items-center justify-between max-w-7xl mx-auto px-4 py-4">
+            <nav className="relative flex gap-3 items-center justify-between max-w-7xl mx-auto px-4 py-4">
 
                 <div className="flex items-center gap-3">
 
@@ -56,7 +60,7 @@ const NavBar = () => {
 
                 </div>
 
-                <ul className="hidden md:flex items-center gap-8">
+                <ul className="hidden md:flex items-center gap-5">
 
                     <li>
                         <Navlink href={"/"}>Home</Navlink>
@@ -76,18 +80,27 @@ const NavBar = () => {
 
                 </ul>
 
-                <div className="hidden md:flex items-center gap-4">
+                <div className="hidden md:flex items-center gap-3">
 
+                    {isPending ?
+                        "User Loading..." : user ? (<div className="flex justify-center items-center gap-3 cursor-pointer">
+                            <p className="text-xl font-bold text-blue-500"> Welcome, {user?.name}</p>
+                            <Image src={user?.image} alt="DP" width={50} height={50}>
+                            </Image>
+                            <div
+                                onClick={async () => await authClient.signOut()}
+                                className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
+                            >
+                                Logout
 
-
-
-                    <Link
-                        href={"/login"}
-                        className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
-                    >
-                        Login
-                        <FaChevronRight className="group-hover:translate-x-1 transition" />
-                    </Link>
+                            </div>
+                        </div>) : (<Link
+                            href={"/login"}
+                            className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
+                        >
+                            Login
+                            <FaChevronRight className="group-hover:translate-x-1 transition" />
+                        </Link>)}
 
                 </div>
 
@@ -123,18 +136,25 @@ const NavBar = () => {
                             </Navlink>
 
                         </div>
-                        <div className="flex flex-col gap-3">
+                        {isPending ?
+                            "User Loading..." : user ? (<div className="flex justify-center items-center gap-3 cursor-pointer">
+                                <p className="text-xl font-bold text-blue-500"> Welcome, {user?.name}</p>
+                                <Image src={user?.image} alt="DP" width={50} height={50}>
+                                </Image>
+                                <div
+                                    onClick={async () => await authClient.signOut()}
+                                    className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
+                                >
+                                    Logout
 
-                            <Link
+                                </div>
+                            </div>) : (<Link
                                 href={"/login"}
-                                className="text-center py-3 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center justify-center gap-2"
+                                className="group px-5 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 via-blue-600 to-purple-600 text-white font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300 shadow-lg shadow-cyan-500/20"
                             >
                                 Login
-                                <FaChevronRight />
-                            </Link>
-
-                        </div>
-
+                                <FaChevronRight className="group-hover:translate-x-1 transition" />
+                            </Link>)}
                     </div>
                 )
             }

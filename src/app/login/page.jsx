@@ -22,7 +22,15 @@ import {
 import {
     HiSparkles,
 } from "react-icons/hi2";
+import { useRouter } from "next/navigation";
+import { authClient } from "@/lib/auth-client";
+
+
+
 const LoginPage = () => {
+
+    const router = useRouter();
+
     const onSubmit = async (e) => {
 
         e.preventDefault();
@@ -37,10 +45,10 @@ const LoginPage = () => {
 
             const { email, password } = userData;
 
-            const { data, error } = await authClient.signUp.email({
+            const { data, error } = await authClient.signIn.email({
                 email,
                 password,
-                callbackURL: "/dashboard",
+                callbackURL: "/",
             });
 
             if (error) {
@@ -54,8 +62,10 @@ const LoginPage = () => {
                 router.push("/");
             }
 
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+
+            console.log(error);
+
             alert("Something went wrong");
         }
     };
@@ -169,6 +179,7 @@ const LoginPage = () => {
                                 </div>
 
                                 <InputGroup.Input
+                                    name="password"
                                     className="w-full pl-12 pr-12 py-4 bg-transparent text-white outline-none placeholder:text-gray-600"
                                     type={isVisible ? "text" : "password"}
                                     placeholder="••••••••"
