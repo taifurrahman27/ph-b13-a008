@@ -63,7 +63,7 @@ const LoginPage = () => {
             }
 
             if (data) {
-                toast.success("Login successful");
+                alert("Login successful");
                 router.push("/");
             }
 
